@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = init()>
+<div>
+    <div class="header">
+        <div class="header1">
+            Hacker News
+        </div>
+        <div class="header2">
+            Best Hacker News Articles
+        </div>
+    </div>
+    <div id="searchId">
+        <input type="text" id="searchInput" name="searchQuery" placeholder="Search (by name)"/>
+        <span class="searchIcon"></span>
+    </div>
+    <div id="sortId">
+        Sort By :
+        <select id="sortById">
+            <option class="sortOption" disabled value="" selected>--Please select--</option>
+            <option class="sortOption" value="title" data-type="string">Title</option>
+            <option class="sortOption" value="created_at" data-type="date">Created At</option>
+            <option class="sortOption" value="num_points" data-type="number">Points</option>
+            <option class="sortOption" value="num_comments" data-type="number">Comments</option>
+        </select>
+        <label class="switch">
+            <input type="checkbox" name="desc" id="sortByOrder" />
+            <span class="slider round"></span>
+        </label>
+        Descending
+    </div>
+</div>
+<div id="mainDivId">
+    <div id="errorId" style="display: none;">Error occurred while fetching data</div>
+</div>
+</body>
+</html>

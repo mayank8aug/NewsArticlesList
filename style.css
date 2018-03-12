@@ -1,0 +1,153 @@
+body {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#mainDivId {
+    height: calc(100% - 170px);
+    overflow: auto;
+}
+
+ul {
+    padding: 0 1rem 1rem 1rem;
+}
+
+li {
+    display: block;
+    padding: 1rem;
+    background: #EEE;
+    margin-bottom: 0.6rem;
+}
+
+li div {
+    padding: 0.4rem;
+}
+
+.dataTitleLink {
+    color: #000;
+    font-weight: 700;
+}
+
+#searchId {
+    display: inline-block;
+    width: calc(50% - 1rem);
+}
+
+#searchInput {
+    line-height: 3rem;
+    padding: 0 1rem;
+    width: 80%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+#sortId {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    font-size: 1.2rem;
+}
+
+#sortById {
+    width: 40%;
+    height: 3rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DDD;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #22C064;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #22C064;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+select {
+    cursor: pointer;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.header1 {
+    font-size: 1.6rem;
+    padding-bottom: 0.6rem;
+    color: #1AB05B;
+}
+
+.header2 {
+    font-size: 1.2rem;
+    color: #1AA8B0;
+}
+
+.searchIcon {
+    top: 8.2rem;
+    position: absolute;
+    opacity: 0.6;
+    left: 2rem;
+    padding-right: 10px;
+}
+
+.searchIcon::before {
+    content: '\1F50E';
+}
+
+#errorId {
+    display: block;
+    padding: 2rem;
+    color: #FF0000;
+    font-size: 2rem;
+    text-align: center;
+}
