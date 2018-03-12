@@ -1,2 +1,2 @@
 # NewsArticlesList
-Sample application to list down all the news records with search and sorting functionality in vanilla javascript.
+- Open the index.html in a web browser to run the application.
